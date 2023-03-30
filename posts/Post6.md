@@ -89,3 +89,40 @@ function mousePressed() {
 
 }
 ```
+
+
+
+this is another sketch for the rmit thing its pretty basic I was trying to experiemnt with rotating the text it was kind of weird and im not sure id be able to do it without the p5 reference but its i think it was a fun attempt anyway.
+
+
+<iframe width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/LceeocLfy"></iframe>
+
+```javascript
+let angle = 0;
+let angle2 = 2;
+
+function setup() {
+  createCanvas(400, 400);
+  textAlign(CENTER);
+  textSize(32);
+}
+
+function draw() {
+  background("pink");
+  
+  translate(width/2, height/2);
+  rotate(angle);
+  text("RMIT", 0, 50);
+  
+  angle += 0.02;
+  
+  
+  translate(width/4, height/4);
+  rotate(angle2);
+  
+  
+  text("Creative Coding", 0 ,50)
+  
+  angle2 += 0.03;
+}
+```
