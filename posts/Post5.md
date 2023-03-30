@@ -4,7 +4,7 @@ publish_date: 2023-03-29
 disable_html_sanitization: true
 
 ---
-# Assignment 1 #
+# Assignment 1#
 
 
 click to randomise the colour of the text and the speed of the bounce
@@ -15,9 +15,14 @@ click to randomise the colour of the text and the speed of the bounce
 ```javascript
 let museo, helvetica;
 
-let col_1, col_2, col_3;
-//R G B for random colours
-let R, G, B;
+
+//col_2 is no longer being used.
+// let col_2;
+let col_1, col_3;
+
+//uppercase R G B for random colours lowercase to be used in map 
+let R, G, B, r, g, b;
+
 // I called this bounce to remember what I was doing its for the speed of the jumping square 
 let bounce;
 
@@ -28,7 +33,7 @@ function preload () {
 
 function setup () {
   createCanvas (576, 324);
-  //RGB and bounce are just random 
+  //RGB and bounce are just randomly generated
   R = random(255);
   G = random(255);
   B = random(255);
@@ -41,7 +46,13 @@ function setup () {
 }
 
 function draw() {
-  background(col_1);
+  
+  //using map because it 
+  r = map(mouseX, 0, 576, 0, 255);
+  g = map(mouseY, 0, 324, 0, 255);
+  b = map(mouseX, 0, 324, 255, 0);
+  background(r, g, b);
+   
 
   for (let i = 0; i < 128; i++) {
     let p = (frameCount + i) / bounce;
@@ -52,11 +63,11 @@ function draw() {
   }
 
   // Add movement to the y-coordinate of the text
-  let Y_offset = sin(frameCount * 0.05) * 10;
+  let Y = sin(frameCount * 0.05) * 10;
   fill(R, G, B);
   textFont(museo);
   textSize(100);
-  text(`RMIT`, width / 2, 130 + Y_offset);
+  text(`RMIT`, width / 2, 130 + Y);
 
   fill(R, G, B);
   textFont(helvetica);
@@ -64,7 +75,7 @@ function draw() {
   text(`Creative Coding`, width / 2, 190);
   text(`Specialisation`, width / 2, 240);
 }
-// i added this mouse press function because i didnt want to have to refresh the page every time i wanted to randomise the colour of the text and speed of the bounce.
+// i added this mouse press function because I didnt want to have to refresh the page every time i wanted to randomise the colour of the text and speed of the bounce.
 function mousePressed() {
   // Generate new random RGB/bounce values
   R = random(255);
@@ -73,5 +84,4 @@ function mousePressed() {
   bounce = random(20, 120);
 
 }
-
 ```
