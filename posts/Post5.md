@@ -4,7 +4,7 @@ publish_date: 2023-03-27
 disable_html_sanitization: true
 
 ---
-# playing around with the map
+# playing around with map
 
 
 `map()` is a function that takes a value within one range of numbers and maps it to a corresponding value in a different range of numbers.
