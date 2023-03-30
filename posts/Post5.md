@@ -1,13 +1,11 @@
 ---
-title: ScreenSaver
-publish_date: 2023-03-14
+title: Assignment 1
+publish_date: 2023-03-29
 disable_html_sanitization: true
 
 ---
+# Assignment 1 #
 
-
-Same sketch as the last post expect this one is hosted on github so you can view it outside the editor. It's really simple but i find it extremely satifying to stare at.
-
-[Screen Saver](https://meowingdavis.github.io/P5/ "Are screen savers pointless in 2023 ?").
+<iframe width="576" height="366" src="https://editor.p5js.org/MeowingDavis/full/QM6ICBQuE"></iframe>
 
 
