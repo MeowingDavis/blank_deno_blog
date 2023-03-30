@@ -19,7 +19,7 @@ The `map()` function takes five arguments:
 
 The `map()` function then returns a new value that is proportionally mapped from the original range to the target range.
 
-<iframe width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/mdrgHxsn8"></iframe>
+<iframe width="600" height="442" src="https://editor.p5js.org/MeowingDavis/full/mdrgHxsn8"></iframe>
 
 ```javascript
 let r = 0;
