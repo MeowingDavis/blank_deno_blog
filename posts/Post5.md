@@ -4,12 +4,12 @@ publish_date: 2023-03-27
 disable_html_sanitization: true
 
 ---
-# playing around with the map setting
+# playing around with the map
 
 
 `map()` is a function that takes a value within one range of numbers and maps it to a corresponding value in a different range of numbers.
 
-The map() function takes five arguments:
+The `map()` function takes five arguments:
 
     value: the value to be mapped, which can be any number
     start1: the lower bound of the original range of numbers to map from
@@ -17,7 +17,7 @@ The map() function takes five arguments:
     start2: the lower bound of the target range of numbers to map to
     stop2: the upper bound of the target range of numbers to map to
 
-The map() function then returns a new value that is proportionally mapped from the original range to the target range.
+The `map()` function then returns a new value that is proportionally mapped from the original range to the target range.
 
 <iframe width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/mdrgHxsn8"></iframe>
 
