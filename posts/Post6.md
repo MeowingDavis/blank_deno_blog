@@ -92,7 +92,9 @@ function mousePressed() {
 
 
 
-this is another sketch for the rmit thing its pretty basic I was trying to experiemnt with rotating the text it was kind of weird and im not sure id be able to do it without the p5 reference but its i think it was a fun attempt anyway.
+this is another sketch for the rmit thing its pretty basic I was trying to experiment with rotating the text it was kind of weird and im not sure id be able to do it without the p5 reference but its i think it was a fun attempt anyway.
+
+I want the both lines of text to bounce of eachother but couldn't work it out.
 
 
 <iframe width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/LceeocLfy"></iframe>
