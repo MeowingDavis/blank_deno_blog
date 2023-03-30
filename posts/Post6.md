@@ -1,89 +1,41 @@
 ---
-title: Assignment 1
-publish_date: 2023-03-29
+title: map
+publish_date: 2023-03-27
 disable_html_sanitization: true
 
 ---
-# Assignment 1#
+# playing around with the map setting
 
 
-Click to randomise the colour of the text and the speed of the bounce.
+`map()` is a function that takes a value within one range of numbers and maps it to a corresponding value in a different range of numbers.
 
-Move mouse around to change colour of the background.
+The map() function takes five arguments:
 
-<iframe width="576" height="366" src="https://editor.p5js.org/MeowingDavis/full/QM6ICBQuE"></iframe>
+    value: the value to be mapped, which can be any number
+    start1: the lower bound of the original range of numbers to map from
+    stop1: the upper bound of the original range of numbers to map from
+    start2: the lower bound of the target range of numbers to map to
+    stop2: the upper bound of the target range of numbers to map to
 
+The map() function then returns a new value that is proportionally mapped from the original range to the target range.
+
+<iframe width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/mdrgHxsn8"></iframe>
 
 ```javascript
-let museo, helvetica;
+let r = 0;
+let b = 255;
 
 
-//col_2 is no longer being used.
-// let col_2;
-let col_1, col_3;
-
-//uppercase R G B for random colours lowercase to be used in map 
-let R, G, B, r, g, b;
-
-// I called this bounce to remember what I was doing its for the speed of the jumping square 
-let bounce;
-
-function preload () {
-  museo = loadFont ('fonts/Museo 700.otf');
-  helvetica = loadFont ('fonts/Helvetica Neue.ttf');
-}
-
-function setup () {
-  createCanvas (576, 324);
-  //RGB and bounce are just randomly generated
-  R = random(255);
-  G = random(255);
-  B = random(255);
-  bounce = random(20, 120);
-
-  col_1 = color (0, 0, 84);
-  col_2 = color (230, 30, 42);
-  col_3 = color (250, 200, 0);
-  noStroke ();
+function setup() {
+  createCanvas(600, 400);
 }
 
 function draw() {
-  
-  //using map because it 
-  r = map(mouseX, 0, 576, 0, 255);
-  g = map(mouseY, 0, 324, 0, 255);
-  b = map(mouseX, 0, 324, 255, 0);
+
+  r = map(mouseX, 0, 600, 0, 255);
+  g = map(mouseY, 0, 400, 0, 255);
+  b = map(mouseX, 0, 600, 255, 0);
   background(r, g, b);
-   
-
-  for (let i = 0; i < 128; i++) {
-    let p = (frameCount + i) / bounce;
-    let y_off = abs(sin(p * PI * 2) * 120);
-    const c = lerpColor(col_1, col_3, i / 128);
-    fill(c);
-    square(50 + ((i / 128) * 100), 160 - y_off, 100);
-  }
-
-  // Add movement to the y-coordinate of the text
-  let Y = sin(frameCount * 0.05) * 10;
-  fill(R, G, B);
-  textFont(museo);
-  textSize(100);
-  text(`RMIT`, width / 2, 130 + Y);
-
-  fill(R, G, B);
-  textFont(helvetica);
-  textSize(42);
-  text(`Creative Coding`, width / 2, 190);
-  text(`Specialisation`, width / 2, 240);
-}
-// i added this mouse press function because I didnt want to have to refresh the page every time i wanted to randomise the colour of the text and speed of the bounce.
-function mousePressed() {
-  // Generate new random RGB/bounce values
-  R = random(255);
-  G = random(255);
-  B = random(255);
-  bounce = random(20, 120);
-
+ 
 }
 ```
