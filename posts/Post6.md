@@ -50,7 +50,7 @@ function setup () {
 
 function draw() {
   
-  //using map because it 
+  //map() is a function that takes a value within one range of numbers and maps it to a corresponding value in a different range of numbers.
   r = map(mouseX, 0, 576, 0, 255);
   g = map(mouseY, 0, 324, 0, 255);
   b = map(mouseX, 0, 324, 255, 0);
@@ -58,6 +58,7 @@ function draw() {
    
 
   for (let i = 0; i < 128; i++) {
+    // deviding frameCount by the randomised bounce number.
     let p = (frameCount + i) / bounce;
     let y_off = abs(sin(p * PI * 2) * 120);
     const c = lerpColor(col_1, col_3, i / 128);
