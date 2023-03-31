@@ -12,6 +12,7 @@ Click to randomise the colour of the text, the speed of the bouncing square plus
 p5 reference allll the waay
 Move mouse on the X and Y to change the background colour.
 
+I had this script working better without an array but i wanted to jam one in there.
 
 
 
@@ -20,8 +21,8 @@ Move mouse on the X and Y to change the background colour.
 ```javascript
 let museo, helvetica;
 
-//col_2 is no longer in use
-let col_1, col_3;
+// an array for col_1 and col_2
+let colors = [];
 
 //I just like rgb as a way off thinking about colour and it works well when randomising imo. the lowercase rgb is more for map and randomising within the draw function not startup
 let R, G, B, r, g, b;
@@ -49,8 +50,10 @@ function setup() {
   B = random(255);
   bounce = random(20, 120);
 
-  col_1 = color(0, 0, 84);
-  col_3 = color(250, 200, 0);
+  // an array of colors
+  colors[0] = color(0, 0, 84);
+  colors[1] = color(250, 200, 0);
+
   // who even likes having a stroke
   noStroke();
 }
@@ -65,9 +68,9 @@ function draw() {
   for (let i = 0; i < 128; i++) {
     let p = (frameCount + i) / bounce;
     let y_off = abs(sin(p * PI * 2) * 120);
-    // uncommenting line 49 and commenting out line 47 randomises the height the square bounces at.
+    //uncommeting line 51 and commenting 49 will randomise thae jump height.
     // let y_off = abs(sin(p * PI * 2) * bounce);
-    const c = lerpColor(col_1, col_3, i / 128);
+    const c = lerpColor(colors[0], colors[1], i / 128);
     fill(c);
     square(50 + (i / 128) * 100, 160 - y_off, 100);
   }
@@ -109,7 +112,9 @@ function mousePressed() {
 
 
 
-this is sketch hurts my eyes... i wanted to use a class but idk i didnt feel it was necessary
+this is sketch hurts my eyes...its pretty much all written within a class. 
+I wanted to use a class but idk i didn't feel it was necessary in the previous sketch. so i made this 
+
 
 
 <iframe  width="576" height="366" src="https://editor.p5js.org/MeowingDavis/full/MMzp_K21K"></iframe>
