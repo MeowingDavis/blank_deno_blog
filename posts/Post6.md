@@ -12,6 +12,8 @@ Click to randomise the colour of the text and the speed of the bouncing square.
 
 Move mouse on the X and Y to change the background colour.
 
+using functions and variables.
+
 <iframe width="576" height="366" src="https://editor.p5js.org/MeowingDavis/full/QM6ICBQuE"></iframe>
 
 
@@ -94,14 +96,19 @@ function mousePressed() {
 
 this is another sketch for the rmit thing its pretty basic I was trying to experiment with rotating the text it was kind of weird and im not sure id be able to do it without the p5 reference but its i think it was a fun attempt anyway.
 
-I wanted the both lines of text to bounce of eachother but couldn't work it out.
+using an array and boolean.
 
 
-<iframe width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/LceeocLfy"></iframe>
+<iframe  width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/bgYx1tUAn"></iframe>
 
 ```javascript
 let angle = 0;
 let angle2 = 2;
+let rewind = false;
+
+// define an array of colors
+let colors = ["pink", "blue", "red", "yellow"];
+let currentColor = colors[0];
 
 function setup() {
   createCanvas(400, 400);
@@ -110,21 +117,33 @@ function setup() {
 }
 
 function draw() {
-  background("pink");
+  background(currentColor);
   
   translate(width/2, height/2);
-  rotate(angle);
+  if (!reverse) {
+    rotate(angle);
+  } else {
+    rotate(-angle);
+  }
   text("RMIT", 0, 50);
   
   angle += 0.02;
   
-  
   translate(width/4, height/4);
-  rotate(angle2);
-  
-  
+  if (!reverse) {
+    rotate(angle2);
+  } else {
+    rotate(-angle2);
+  }
   text("Creative Coding", 0 ,50)
   
   angle2 += 0.03;
+}
+
+function mouseClicked() {
+  rewind = !rewind;
+  
+  // select a random color from the array and set it as the current background color
+  currentColor = colors[Math.floor(Math.random() * colors.length)];
 }
 ```
