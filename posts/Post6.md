@@ -8,11 +8,11 @@ disable_html_sanitization: true
 
 
 
-Click to randomise the colour of the text and the speed of the bouncing square.
+Click to randomise the colour of the text, the speed of the bouncing square plus change the direction inwhich the text is moving.
 
 Move mouse on the X and Y to change the background colour.
 
-using functions and variables.
+
 
 
 <iframe width="576" height="366" src="https://editor.p5js.org/MeowingDavis/full/O5mzXVR3x"></iframe>
