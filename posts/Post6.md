@@ -125,7 +125,8 @@ class Sketch {
   }
 
   setup() {
-    createCanvas(400, 400);
+    createCanvas(576, 324);
+    
     textAlign(CENTER);
     textSize(32);
   }
@@ -165,14 +166,19 @@ const sketch = new Sketch();
 
 function setup() {
   sketch.setup();
+  print("LAAAG")
 }
 
 function draw() {
   sketch.draw();
+ 
+ 
+  
 }
 
 function mouseClicked() {
   sketch.mouseClicked();
 }
+
 
 ```
