@@ -112,7 +112,7 @@ function mousePressed() {
 this is another sketch for the rmit thing its pretty basic I was trying to experiment with rotating the text it was kind of weird and im not sure id be able to do it without the p5 reference but its i think it was a fun attempt anyway.
 
 
-<iframe width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/MMzp_K21K"></iframe>
+<iframe  width="576" height="366" src="https://editor.p5js.org/MeowingDavis/full/MMzp_K21K"></iframe>
 
 ```javascript
 class Sketch {
