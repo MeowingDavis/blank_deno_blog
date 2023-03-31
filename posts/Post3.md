@@ -5,7 +5,9 @@ disable_html_sanitization: true
 ---
 
 
-Experimenting with random in p5js
+Experimenting with random in p5js.
+
+I absolutly love randomness. I cant quite explain why but I love seeing what happens. I think im just drawn to the idea of a human giving parameters and allowing the machine to generate what it wants within those parameters. It stems from my fasination with Music thing modulars' turing machine based off a step register. 
 
 [Random Sketch](https://editor.p5js.org/MeowingDavis/sketches/eA8brS7Vz "It sucks but i love it").
 
