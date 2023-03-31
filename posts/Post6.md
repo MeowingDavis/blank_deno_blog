@@ -120,7 +120,7 @@ function draw() {
   background(currentColor);
   
   translate(width/2, height/2);
-  if (!reverse) {
+  if (!rewind) {
     rotate(angle);
   } else {
     rotate(-angle);
@@ -130,7 +130,7 @@ function draw() {
   angle += 0.02;
   
   translate(width/4, height/4);
-  if (!reverse) {
+  if (!rewind) {
     rotate(angle2);
   } else {
     rotate(-angle2);
