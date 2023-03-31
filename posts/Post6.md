@@ -9,7 +9,7 @@ disable_html_sanitization: true
 
 
 Click to randomise the colour of the text, the speed of the bouncing square plus change the direction inwhich the text is moving.
-
+p5 reference allll the waay
 Move mouse on the X and Y to change the background colour.
 
 
@@ -110,8 +110,6 @@ function mousePressed() {
 
 
 this is another sketch for the rmit thing its pretty basic I was trying to experiment with rotating the text it was kind of weird and im not sure id be able to do it without the p5 reference but its i think it was a fun attempt anyway.
-
-using an array and boolean.
 
 
 <iframe width="400" height="442" src="https://editor.p5js.org/MeowingDavis/full/MMzp_K21K"></iframe>
