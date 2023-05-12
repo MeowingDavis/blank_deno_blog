@@ -7,6 +7,9 @@ disable_html_sanitization: true
 # assignment 2 netart
 
 
+### this works on safari and firefox but chrome hates it 
+### the iteration only works on safari and firefox seems to ignore it
+
 [D R I F T](https://davis-netart.deno.dev/).
 
 
@@ -62,7 +65,7 @@ function draw() {
   if (bgToggle) {
     background(220);
   }
-  //iter works when viewing locally but im not sure why when uploaded to deno it doesnt display. it much cooler when it works :/
+  //iter works when viewing locally and on safari. it much cooler when it works :/
   // This code calculates the current iteration for an animation that moves back and forth within the screen width.
   const modNumber = (2 * innerWidth) - 1; // Set the modulo limit to the screen width multiplied by 2 minus 1
   let iter = ((frameCount % modNumber) + 1); // Add 1 to the iteration to avoid it being 0
