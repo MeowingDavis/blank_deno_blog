@@ -6,7 +6,7 @@ disable_html_sanitization: true
 ---
 # assignment 2 netart
 
-
+## plz use safari or brave <3
 ### this works on safari and brave, firefox works but ignores the iteration thing and chrome just hates it. 
 
 
