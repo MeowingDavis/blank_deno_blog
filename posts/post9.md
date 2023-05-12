@@ -7,7 +7,7 @@ disable_html_sanitization: true
 # assignment 2 netart
 
 
-[Click for acid](https://davis-netart.deno.dev/).
+[D R I F T](https://davis-netart.deno.dev/).
 
 
 ```javascript
