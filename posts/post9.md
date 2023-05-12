@@ -45,12 +45,13 @@ function setup() {
     source.buffer = buffer;
     source.connect(gainNode); // connect the source to the gain node
     gainNode.connect(audio_context.destination); // connect the gain node to the destination
-    gainNode.gain.value = 0.09; //setting gain to 0.2 maybe it could be louder but 0.1 seemed good while testing
+    gainNode.gain.value = 0.09; //setting gain to 0.9 
     source.start(0);
     source.loop = true; //loop audio so you can stare for longer \/O_O\/
   });
 
   // Add an event listener for the "beforeunload" event (I did this in an attempt to stop the audio clipping when exiting the window or refreshing, I dont think it works)
+  // audio_context.close() should be executed after the audio is done playing, not on window refresh/exit. but \/O_o\/
   window.addEventListener("beforeunload", () => {
     audio_context.close();
   });
@@ -61,32 +62,39 @@ function draw() {
   if (bgToggle) {
     background(220);
   }
+  //iter works when viewing locally but im not sure why when uploaded to deno it doesnt display. it much cooler when it works :/
+  // This code calculates the current iteration for an animation that moves back and forth within the screen width.
+  const modNumber = (2 * innerWidth) - 1; // Set the modulo limit to the screen width multiplied by 2 minus 1
+  let iter = ((frameCount % modNumber) + 1); // Add 1 to the iteration to avoid it being 0
+  iter = iter > innerWidth ? (modNumber - iter) : iter;
 
   // Set the ellipse to have no outline
   noStroke();
 
-  //Calculate the diamater of the ellipse
+  //Calculate the diameter of the ellipse
   let diameter = 100 + 50 * noise(angle + 20);
 
   // Calculate the ellipse coordinates
-  let x = width/2 + 50 * noise(angle);
-  let y = height/2 + 50 * noise(angle+10);
+  let x = width / 2 + 50 * noise(angle);
+  let y = height / 2 + 50 * noise(angle + 10);
 
   // Set ellipse mode to the center
   ellipseMode(CENTER);
 
-  // Apply color using different wave frequencies(I was initally using random but i wasnt enjoying the flashing changes so ive decided to use what i imagine is similar to an lfo)
+  // Apply color using different wave frequencies
   let r = 255 * 0.5 * (1 + sin(frameCount * 0.01));
   let g = 255 * 0.5 * (1 + sin(frameCount * 0.02));
   let b = 255 * 0.5 * (1 + sin(frameCount * 0.03));
   fill(r, g, b);
-
+  
   // Recursively draw the ellipse
-  recursive_ellipse(x, y, diameter, diameter);
+  recursive_ellipse(x, y, iter, diameter);
 
-  // Update the angle
-  angle += 0.05;
+  // Update angle for noise used in ellipse calculations
+  angle += 0.01;
 }
+
+ 
 
 //Recursive function to draw an ellipse
 function recursive_ellipse(x, y, w, h) {
@@ -118,6 +126,5 @@ function doubleClicked() {
     background(220);
   } 
 }
+ 
 ```
-
-
