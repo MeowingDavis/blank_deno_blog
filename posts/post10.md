@@ -17,6 +17,9 @@ ahhh I love strudel. Still finding it a little confusing and I'm yet to try inte
 
 Degrage is super cool it randomly drops notes or I guess I think of them as triggers in the sequence, breaking it up a little. 
 
+
+I figured out that tempo is set by CPM (cycles per minute) I still havn't entirely worked out what that means in a musical context but 75 cycles per minute seemed to be sutiable for what I wanted.
+
 ```javascript
 stack(
   
