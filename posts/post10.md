@@ -20,7 +20,7 @@ Degrage is super cool it randomly drops notes or I guess I think of them as trig
 ```javascript
 stack(
   
- note("g3 g4, c3 c4 [f4 g#4] b4")
+ note("g3 g4, [c3 c4] [f4 g#4] b4 f3")
   //.arp("0 [0,2] 1 [0,2]")
 
   .decay(0.001)
@@ -28,7 +28,7 @@ stack(
   .delay(0.2)
   .room(0.6)
   .s('gm_ocarina')
-  .cutoff("200 400 300 500")
+  .cutoff("200 400 300 [500 400]")
   .gain(0.7)
   ,
   
@@ -42,7 +42,7 @@ stack(
   .bank("RolandTR909")
   .cpm(75)
   ,
-  
+
   s("hh*8").bank("RolandTR808")
   .room(0.8)
   .pan(0.5)
