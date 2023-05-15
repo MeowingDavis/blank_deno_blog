@@ -1,5 +1,5 @@
 ---
-title: assignment 2
+title: Strudel REPL
 publish_date: 2023-05-16
 disable_html_sanitization: true
 
