@@ -8,7 +8,7 @@ disable_html_sanitization: true
 
 
 
-Hydra is live code-able video synth and coding environment that runs directly in the browser. It is free and open-source and made for beginners and experts alike.
+Hydra is a live code-able video synth and coding environment that runs directly in the browser. It is free and open-source and made for beginners and experts alike.
 
 
 
