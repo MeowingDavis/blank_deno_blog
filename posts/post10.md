@@ -11,7 +11,7 @@ funny little techno loop i made in strudel repl.
 
 [bleep bloop](https://strudel.tidalcycles.org/?D-n-0lNAODju).
 
-ahhh I love strudel. Still finding it a little confusing and I'm yet to try intergrate the midi out with any hardware synths but once im a little more comfortable with it I shall give it a go.
+ahhh I love strudel. The sequencing is amazing I would love if I could code my midi clips like that in ableton.. you probably can somehow.
 
 
 
