@@ -10,16 +10,20 @@ disable_html_sanitization: true
 
 Hydra is live code-able video synth and coding environment that runs directly in the browser. It is free and open-source and made for beginners and experts alike.
 
+
+
+### experimenting with different sources
+
 ```javascript
 
 
 voronoi(5,0.3,0.3)
 
- voronoi(5,0.3,0.3)
- .color([1,0,0,1,0],[0,1,0,1,0],[0,0,1,1,0])
-  .colorama([0.005,0.33,0.66,1.0].fast(0.125))
-	.pixelate(50, 50)
-  .out(o0)
+voronoi(5,0.3,0.3)
+.color([1,0,0,1,0],[0,1,0,1,0],[0,0,1,1,0])
+.colorama([0.005,0.33,0.66,1.0].fast(0.125))
+.pixelate(50, 50)
+.out(o0)
 
 ```
 
@@ -28,8 +32,9 @@ voronoi(5,0.3,0.3)
 
 ```javascript
 noise(5,0.3,0.3)
- .color([1,0,0,1,],[0,1,0,1,],[0,0,1,1,])
-  .colorama([0.005,0.33,0.66,1.0].fast(0.125))
+.color([1,0,0,1,],[0,1,0,1,],[0,0,1,1,])
+.colorama([0.005,0.33,0.66,1.0].fast(0.125))
 .rotate(30, 0.2)
-	.pixelate(50, 50)
-  .out(o0)
+.pixelate(50, 50)
+.out(o0)
+```
