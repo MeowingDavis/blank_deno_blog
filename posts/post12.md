@@ -24,3 +24,10 @@ Although I enjoy strudel and really enjoy the note sequencing, I prefer the proc
 
 
 <iframe width="928" height="522" src="https://www.youtube.com/embed/LK5s_-SeTD8" title="Hydra and a terrible synth patch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+### Assignment video 
+
+
+<iframe width="928" height="522" src="https://www.youtube.com/embed/iomqjAW0FUo" title="s3775656 Davis Lang ass 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
