@@ -6,13 +6,15 @@ disable_html_sanitization: true
 ---
 ## Hydra
 
-[veronoi experiment](https://hydra.ojack.xyz/?code=dm9yb25vaSg1JTJDMC4zJTJDMC4zKSUwQSUyMC5jb2xvciglNUIxJTJDMCUyQzAlMkMxJTJDMCU1RCUyQyU1QjAlMkMxJTJDMCUyQzElMkMwJTVEJTJDJTVCMCUyQzAlMkMxJTJDMSUyQzAlNUQpJTBBJTIwJTIwLmNvbG9yYW1hKCU1QjAuMDA1JTJDMC4zMyUyQzAuNjYlMkMxLjAlNUQuZmFzdCgwLjEyNSkpJTBBJTA5LnBpeGVsYXRlKDUwJTJDJTIwNTApJTBBJTIwJTIwLm91dChvMCk%3D).
+
 
 Hydra is live code-able video synth and coding environment that runs directly in the browser. It is free and open-source and made for beginners and experts alike.
 
 
 
 ### experimenting with different sources
+
+[veronoi experiment](https://hydra.ojack.xyz/?code=dm9yb25vaSg1JTJDMC4zJTJDMC4zKSUwQSUyMC5jb2xvciglNUIxJTJDMCUyQzAlMkMxJTJDMCU1RCUyQyU1QjAlMkMxJTJDMCUyQzElMkMwJTVEJTJDJTVCMCUyQzAlMkMxJTJDMSUyQzAlNUQpJTBBJTIwJTIwLmNvbG9yYW1hKCU1QjAuMDA1JTJDMC4zMyUyQzAuNjYlMkMxLjAlNUQuZmFzdCgwLjEyNSkpJTBBJTA5LnBpeGVsYXRlKDUwJTJDJTIwNTApJTBBJTIwJTIwLm91dChvMCk%3D).
 
 ```javascript
 
