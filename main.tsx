@@ -16,6 +16,11 @@ blog({
     { title: "GitHub", url: "https://github.com/denobot" },
     { title: "Twitter", url: "https://twitter.com/denobot" },
   ],
+  links: [
+    { title: "Email", url: "mailto:bot@deno.com" },
+    { title: "GitHub", url: "https://github.com/denobot" },
+    { title: "Twitter", url: "https://twitter.com/denobot" },
+  ],
 
   // middlewares: [
 
