@@ -4,10 +4,8 @@ publish_date: 2023-05-12
 disable_html_sanitization: true
 
 ---
-# assignment 2 netart
+# Drift
 
-## plz use safari or brave <3
-### this works on safari and brave, firefox works but ignores the iteration thing and chrome just hates it. 
 
 
 [D R I F T](https://davis-netart.deno.dev/).

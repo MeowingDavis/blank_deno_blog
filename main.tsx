@@ -3,14 +3,19 @@
 import blog, { ga, redirects, h } from "blog";
 
 blog({
-  title: "Davis' Blog",
-  description: "Creative Coding, Web Experiments, Learning",
+  title: "Davis Lang",
+  description: "Digital Media"
   // header: <header>Your custom header</header>,
   // section: <section>Your custom section</section>,
   // footer: <footer>Your custom footer</footer>,
   avatar: "./img/profilePic.jpg",
   avatarClass: "rounded-full",
   author: "Davis Lang",
+  links: [
+    { title: "Email", url: "mailto:bot@deno.com" },
+    { title: "GitHub", url: "https://github.com/denobot" },
+    { title: "Twitter", url: "https://twitter.com/denobot" },
+  ],
 
   // middlewares: [
 
@@ -25,3 +30,7 @@ blog({
 
   // ]
 });
+import blog, { ga, redirects } from "https://deno.land/x/deno_blog/blog.tsx";
+import { unocss_opts } from "./unocss.ts";
+
+]

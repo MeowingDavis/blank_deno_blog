@@ -4,7 +4,7 @@ publish_date: 2023-05-31
 disable_html_sanitization: true
 
 ---
-## Assignment 3
+## Community of Practice
 
 
 

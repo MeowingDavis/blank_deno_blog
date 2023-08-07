@@ -4,7 +4,7 @@ publish_date: 2023-03-29
 disable_html_sanitization: true
 
 ---
-# Assignment 1
+# Rmit Logo Experiement
 
 
 
